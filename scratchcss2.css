@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-image: linear-gradient(rgba(0,50,0,0.16),rgba(0,150,0,0.6));
+    width: 1140px;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: Arial;
+    padding: 20px;
+    color: rgba(45,87,0,0.9);
+}
+
+.body{
+    /*background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("bikes.jpg");*/
+    background-image: url("bikes.jpg");
+    background-size: 100%;
+    background-position: top;
+    width: 1140px;
+    text-align: justify;
+    margin:auto;
+    font-size: 22px;
+    font-family: Lato , Arial, sans-serif;
+    word-spacing: 30px;
+    /*letter-spacing: 1px;*/
+    color: #cfc;
+    text-transform: lowercase;
+}
+
+.footer{
+    background-color: antiquewhite;
+    width: 1140px;
+    margin:auto;
+    font-size: 15px;
+    font-family: Calibri;
+    top: 1900px;;
+}

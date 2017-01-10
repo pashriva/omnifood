@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    color: #45484c;
+    font-family: Lato , Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    border: 1px dotted blue;
+    margin: 0 auto 0 auto; /* if the left margin and the right margin are set to auto, the content will come in center*/
+    width: 1140px;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.16),rgba(0,0,0,0.6)), url("img/hero.jpg");/* This is like having two background images*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 100 percent of the viewport*/
+}
+
+h1{
+    margin: 0px ;
+    color: white;
+    font-size: 200%; /*This is relative to the font-size set for the HTML tag above. This is relative sizing*/
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
