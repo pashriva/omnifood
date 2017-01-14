@@ -14,13 +14,13 @@ html{
 }
 
 .row{
-    border: 1px dotted blue;
+    /*border: 1px dotted blue;*/
     margin: 0 auto 0 auto; /* if the left margin and the right margin are set to auto, the content will come in center*/
     width: 1140px;
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.16),rgba(0,0,0,0.6)), url("img/hero.jpg");/* This is like having two background images*/
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url("img/hero.jpg");/* This is like having two background images*/
     background-size: cover;
     background-position: center;
     height: 100vh; /* 100 percent of the viewport*/
@@ -63,7 +63,7 @@ h1{
 
 .btn:hover{
     background-color: #cf6d17;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-ghost{
@@ -76,3 +76,12 @@ h1{
     color: #fff;
 }
 
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+}
