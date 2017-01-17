@@ -19,24 +19,84 @@ html{
     width: 1140px;
 }
 
+section{
+    padding: 80px 0px;
+}
+
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url("img/hero.jpg");/* This is like having two background images*/
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("img/hero.jpg");/* This is like having two background images*/
     background-size: cover;
     background-position: center;
     height: 100vh; /* 100 percent of the viewport*/
+}
+
+/********** Header ***********/
+
+h1,
+h2,h3{
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 h1{
     margin: 0px ;
     color: white;
     font-size: 200%; /*This is relative to the font-size set for the HTML tag above. This is relative sizing*/
-    font-weight: 300;
-    text-transform: capitalize;
-    letter-spacing: 1px;
     word-spacing: 4px;
     margin-bottom: 20px;
 }
 
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px;;
+}
+
+h2:after{ /*Pseudo class - Used for creating an orange line below the h2 elements */
+    display: block;
+    background-color: #e67e22;
+    content: "  ";
+    height:2px;
+    width: 100px;
+    margin:auto;
+    margin-top:  30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/********** PARAGRAPH***********/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/********** Icon ***********/
+.icon-big{
+
+    font-size: 300%;
+    display: block;
+    color:#e67e22;
+    margin-bottom: 10px;
+}
+
+
+/********** Header ***********/
 .hero-text-box{
     position: absolute;
     width: 1140px;
@@ -80,8 +140,116 @@ h1{
     height: 100px;
     width: auto;
     float: left;
+    margin-top: 20px;
 }
 
 .main-nav{
     float: right;
+    list-style: none; /* For removing the bullet point thing*/
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,   /* There should be a comma between this line and next or styling won't work */
+.main-nav li a:visited{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size:90%;
+    text-decoration:  none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s
+}
+
+.main-nav li a:hover,   /* There should be a comma between this line and next or styling won't work */
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+/**********************/
+/* MEALS */
+/**********************/
+
+.section-meals{
+    padding: 0px;
+}
+
+.meals-showcase{
+    list-style: none;
+    width:100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width:100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img{
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/**********************/
+/* How it Works */
+/**********************/
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3% ;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    height: 60px;
+    margin-bottom: 55px;
+}
+.works-step div {
+    color: #e67e22;
+    font-size: 150%;
+    border: 2px solid #e67e22;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
 }
